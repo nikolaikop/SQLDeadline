@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org",
+  "type": "array",
+  "items": {
+    "required": [
+      "id",
+      "number",
+      "balance"
+    ],
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "number": {
+        "type": "string",
+        "enum": [
+          "**** **** **** 0001",
+          "**** **** **** 0002"
+        ]
+      },
+      "balance": {
+        "type": "integer",
+        "enum": [
+          5000,
+          10000,
+          15000
+        ]
+      }
+    }
+  }
+}
